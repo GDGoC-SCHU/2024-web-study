@@ -1,21 +1,12 @@
 1. querySelector와 getElementById 비교
 querySelector는 다양한 CSS 선택자를 사용할 수 있어 편리하다.
 getElementById는 ID 기반 선택만 가능하지만, 속도는 더 빠르다.
-querySelector로 가능한 선택자
 
-1-1 ID 선택
+ex)
 const elementById = document.querySelector('#myId');
-
-1-2 클래스 선택
 const elementByClass = document.querySelector('.myClass');
-
-1-3 태그 선택
 const elementByTag = document.querySelector('div');
-
-1-4 속성 선택
 const elementByAttribute = document.querySelector('[data-test="example"]');
-
-1-5 중첩된 요소 선택
 const child = document.querySelector('#parentId .childClass');
 
 위의 querySelector는 getElement--(Id,ClassName,TagName,Name) 으로 각각 같은 기능을 수행한다.
@@ -23,6 +14,7 @@ const child = document.querySelector('#parentId .childClass');
 ex)
 document.getElementById('myId');
 document.querySelector('#myId');
+- 둘은 같은 기능을 수행
 
 
 2. addEventListener와 classList
@@ -33,6 +25,7 @@ element.addEventListener("click", function() {
 });
 const element = document.querySelector("#myElement");
 element.classList.add("newClass");
+
 
 3. localStorage
 브라우저에 데이터를 영구적으로 저장할 수 있는 공간
